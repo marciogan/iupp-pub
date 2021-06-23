@@ -1,0 +1,21 @@
+micronaut:
+  application:
+    name: iuppPub
+  server:
+    port: 8081
+
+#cassandra:
+#  default:
+#    clusterName: '"myCluster"'
+#    contactPoint: '"localhost"'
+#    port: 9042
+#    maxSchemaAgreementWaitSeconds: 20
+#    ssl: true
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+    details-visible: ANONYMOUS
+
+nats.addresses:
+- nats://localhost:4222
